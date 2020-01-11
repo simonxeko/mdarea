@@ -140,9 +140,12 @@
         if (!selection && info.prefix) {
             if (!shift && info.prefix === info.line) {
                 prefix = prefix.substring(0, info.offset) + stripLast(info.prefix);
-            } else if (!shift && isList(info.prefix)) {
+            	console.log("L1 ", info, "::", prefix);
+	    } else if (!shift && isList(info.prefix)) {
                 prefix += "\n" + increment(info.prefix);
+		console.log("L2 ", info, "::", prefix);
             } else {
+		console.log("L3 ", info.prefix, "::", shift);
                 prefix += "\n" + toIndent(info.prefix, shift);
             }
         } else {
