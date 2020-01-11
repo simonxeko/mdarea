@@ -4,9 +4,9 @@
     "license": "MIT",
     "repository": {
         "type": "vcs",
-        "url": "https://github.com/jahudka/mdarea"
+        "url": "https://github.com/simonxeko/mdarea"
     },
-    "version": "0.0.10",
+    "version": "0.1.10",
     "main": "mdarea.min.js",
     "devDependencies": {
         "gulp": "^4.0.0",
